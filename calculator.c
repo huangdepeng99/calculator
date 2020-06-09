@@ -482,6 +482,8 @@ int main(int argc, char *argv[])
 			result = calcExpr(posExp, len, argv);
 			printf("%f\n", result);
 		}
+		
+		fclose(fp);
 
 	}else{		//情况3：命令行语法错误
 		printErr(CLI_SYNTAX, argv, NULL);
